@@ -1,10 +1,11 @@
 const form = document.querySelector('form');
 const nameInput = document.querySelector('#name');
 const jobInput = document.querySelector('#job');
+const submitBtn = document.querySelector('#submit-btn');
 
 form.addEventListener('submit', async (event) => {
   event.preventDefault();
-  console.log(nameInput.value, jobInput.value);
+  submitBtn.textContent = 'Loading...';
 
   const data = {
     name: nameInput.value,
@@ -20,8 +21,9 @@ form.addEventListener('submit', async (event) => {
   });
 
   if (res.ok) {
-    console.log('successful');
+    alert('successful');
+    submitBtn.textContent = 'Save';
   } else {
-    console.log('unsuccessful');
+    alert('unsuccessful');
   }
 });
