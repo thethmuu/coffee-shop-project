@@ -47,24 +47,25 @@
           <div class="form-control w-full">
             <label class="label">Name</label>
             <input
+              id="name"
               type="text"
               placeholder="Type here"
               class="input input-bordered w-full"
+              required
             />
           </div>
           <div class="form-control w-full mt-4">
-            <label class="label">Username</label>
+            <label class="label">Job Title</label>
             <input
+              id="job"
               type="text"
               placeholder="Type here"
               class="input input-bordered w-full"
+              required
             />
           </div>
           <div class="form-control w-full mt-4">
-            <input
-              type="file"
-              class="file-input file-input-bordered w-full"
-            />
+            <input type="file" class="file-input file-input-bordered w-full" />
           </div>
           <div class="flex justify-center mt-4">
             <button class="btn">Save</button>
@@ -132,5 +133,6 @@
     </footer>
 
     <script type="module" src="/main.js"></script>
+    <script src="./add-member.js"></script>
   </body>
 </html>
