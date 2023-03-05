@@ -17,3 +17,9 @@ h2,
 h3 {
   font-family: 'Outfit', sans-serif;
 }
+
+@layer components {
+  .featured-card {
+    @apply card w-96 bg-base-100 shadow-xl rounded-sm;
+  }
+}

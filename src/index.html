@@ -42,7 +42,7 @@
 
     <!-- carousel section -->
     <section class="mt-8">
-      <div class="carousel container mx-auto w-full max-w-6xl max-h-72">
+      <div class="carousel container mx-auto w-full max-w-6xl max-h-96">
         <div id="slide1" class="carousel-item relative w-full">
           <img
             src="https://images.pexels.com/photos/683039/pexels-photo-683039.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
@@ -69,7 +69,7 @@
         </div>
         <div id="slide3" class="carousel-item relative w-full">
           <img
-            src="https://images.pexels.com/photos/1015568/pexels-photo-1015568.jpeg?auto=compress&cs=tinysrgb&w=1200"
+            src="https://images.pexels.com/photos/5414010/pexels-photo-5414010.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
             class="w-full object-cover"
           />
           <div
@@ -99,74 +99,10 @@
       <div class="container mx-auto">
         <h2 class="text-center text-4xl font-bold">Featured Coffee</h2>
         <!-- card container -->
-        <div class="flex justify-center flex-wrap gap-8 mt-4">
-          <!-- coffee card -->
-          <article class="card w-96 bg-base-100 shadow-xl rounded-sm">
-            <figure>
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Doppio.jpg/2560px-Doppio.jpg"
-                alt="Shoes"
-              />
-            </figure>
-            <div class="card-body">
-              <h2 class="card-title">
-                Doppio
-                <div class="badge badge-secondary">NEW</div>
-              </h2>
-              <p>
-                A double shot of espresso, the doppio is perfect for putting
-                extra pep in your step.
-              </p>
-              <div class="card-actions justify-end">
-                <div class="badge badge-outline">2oz Espresso</div>
-              </div>
-            </div>
-          </article>
-          <!-- coffee card -->
-          <article class="card w-96 bg-base-100 shadow-xl rounded-sm">
-            <figure>
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Doppio.jpg/2560px-Doppio.jpg"
-                alt="Shoes"
-              />
-            </figure>
-            <div class="card-body">
-              <h2 class="card-title">
-                Doppio
-                <div class="badge badge-secondary">NEW</div>
-              </h2>
-              <p>
-                A double shot of espresso, the doppio is perfect for putting
-                extra pep in your step.
-              </p>
-              <div class="card-actions justify-end">
-                <div class="badge badge-outline">2oz Espresso</div>
-              </div>
-            </div>
-          </article>
-          <!-- coffee card -->
-          <article class="card w-96 bg-base-100 shadow-xl rounded-sm">
-            <figure>
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Doppio.jpg/2560px-Doppio.jpg"
-                alt="Shoes"
-              />
-            </figure>
-            <div class="card-body">
-              <h2 class="card-title">
-                Doppio
-                <div class="badge badge-secondary">NEW</div>
-              </h2>
-              <p>
-                A double shot of espresso, the doppio is perfect for putting
-                extra pep in your step.
-              </p>
-              <div class="card-actions justify-end">
-                <div class="badge badge-outline">2oz Espresso</div>
-              </div>
-            </div>
-          </article>
-        </div>
+        <div
+          id="featured-container"
+          class="flex justify-center flex-wrap gap-8 mt-4"
+        ></div>
       </div>
     </section>
 
@@ -276,5 +212,6 @@
     </footer>
 
     <script type="module" src="../main.js"></script>
+    <script src="home.js"></script>
   </body>
 </html>
