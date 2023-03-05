@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Casa Cafe Site | Homepage</title>
   </head>
-  <body>
+  <body class="h-screen flex flex-col">
     <header class="navbar container mx-auto bg-base-100">
       <div class="flex-1">
         <a class="btn btn-ghost normal-case text-xl">Casa Cafe</a>
       </div>
       <nav class="flex-none">
         <ul class="menu menu-horizontal px-1">
-          <li><a>All Coffee</a></li>
+          <li><a href="./all-coffee.html">All Coffee</a></li>
           <li><a href="./members.html">Members</a></li>
           <li><a>About Us</a></li>
           <!-- <li tabindex="0">
@@ -40,86 +40,92 @@
       </nav>
     </header>
 
-    <!-- carousel section -->
-    <section class="mt-8">
-      <div class="carousel container mx-auto w-full max-w-6xl max-h-96">
-        <div id="slide1" class="carousel-item relative w-full">
-          <img
-            src="https://images.pexels.com/photos/683039/pexels-photo-683039.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-            class="w-full object-cover"
-          />
-          <div
-            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
-          >
-            <a href="#slide4" class="btn btn-circle">❮</a>
-            <a href="#slide2" class="btn btn-circle">❯</a>
+    <main class="grow">
+      <!-- carousel section -->
+      <section class="mt-8">
+        <div class="carousel container mx-auto w-full max-w-6xl max-h-96">
+          <div id="slide1" class="carousel-item relative w-full">
+            <img
+              src="https://images.pexels.com/photos/683039/pexels-photo-683039.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              class="w-full object-cover"
+            />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide4" class="btn btn-circle">❮</a>
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide2" class="carousel-item relative w-full">
+            <img
+              src="https://images.pexels.com/photos/769158/pexels-photo-769158.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              class="w-full object-cover"
+            />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide1" class="btn btn-circle">❮</a>
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide3" class="carousel-item relative w-full">
+            <img
+              src="https://images.pexels.com/photos/5414010/pexels-photo-5414010.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              class="w-full object-cover"
+            />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide2" class="btn btn-circle">❮</a>
+              <a href="#slide4" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide4" class="carousel-item relative w-full">
+            <img
+              src="https://images.pexels.com/photos/683039/pexels-photo-683039.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              class="w-full object-cover"
+            />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide3" class="btn btn-circle">❮</a>
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
           </div>
         </div>
-        <div id="slide2" class="carousel-item relative w-full">
-          <img
-            src="https://images.pexels.com/photos/769158/pexels-photo-769158.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-            class="w-full object-cover"
-          />
-          <div
-            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
-          >
-            <a href="#slide1" class="btn btn-circle">❮</a>
-            <a href="#slide3" class="btn btn-circle">❯</a>
-          </div>
-        </div>
-        <div id="slide3" class="carousel-item relative w-full">
-          <img
-            src="https://images.pexels.com/photos/5414010/pexels-photo-5414010.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-            class="w-full object-cover"
-          />
-          <div
-            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
-          >
-            <a href="#slide2" class="btn btn-circle">❮</a>
-            <a href="#slide4" class="btn btn-circle">❯</a>
-          </div>
-        </div>
-        <div id="slide4" class="carousel-item relative w-full">
-          <img
-            src="https://images.pexels.com/photos/683039/pexels-photo-683039.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-            class="w-full object-cover"
-          />
-          <div
-            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
-          >
-            <a href="#slide3" class="btn btn-circle">❮</a>
-            <a href="#slide1" class="btn btn-circle">❯</a>
-          </div>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- featured section -->
-    <section class="mt-8">
-      <div class="container mx-auto">
-        <h2 class="text-center text-4xl font-bold">Featured Coffee</h2>
-        <!-- card container -->
-        <div
-          id="featured-container"
-          class="flex justify-center flex-wrap gap-8 mt-4"
-        ></div>
-      </div>
-    </section>
-
-    <!-- pick section -->
-    <section class="mt-8">
-      <div class="container mx-auto">
-        <h2 class="text-center text-4xl font-bold">Grab your favourite one</h2>
-        <!-- card container -->
-        <div id="pick-container" class="flex justify-center flex-wrap gap-8 mt-4">
+      <!-- featured section -->
+      <section class="mt-8">
+        <div class="container mx-auto">
+          <h2 class="text-center text-4xl font-bold">Featured Coffee</h2>
+          <!-- card container -->
+          <div
+            id="featured-container"
+            class="flex justify-center flex-wrap gap-8 mt-4"
+          ></div>
         </div>
-      </div>
-      <div class="flex justify-center mt-4">
-        <a href="./all-coffee.html" class="btn btn-sm btn-outline"
-          >View all items</a
-        >
-      </div>
-    </section>
+      </section>
+
+      <!-- pick section -->
+      <section class="mt-8">
+        <div class="container mx-auto">
+          <h2 class="text-center text-4xl font-bold">
+            Grab your favourite one
+          </h2>
+          <!-- card container -->
+          <div
+            id="pick-container"
+            class="flex justify-center flex-wrap gap-8 mt-4"
+          ></div>
+        </div>
+        <div class="flex justify-center mt-4">
+          <a href="./all-coffee.html" class="btn btn-sm btn-outline"
+            >View all items</a
+          >
+        </div>
+      </section>
+    </main>
 
     <footer class="footer container mx-auto items-center p-4 mt-8">
       <div class="items-center grid-flow-col">
