@@ -22,4 +22,8 @@ h3 {
   .featured-card {
     @apply card w-96 bg-base-100 shadow-xl rounded-sm;
   }
+
+  .pick-card {
+    @apply card w-96 bg-base-100 shadow-xl image-full;
+  }
 }
