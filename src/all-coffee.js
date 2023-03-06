@@ -1,7 +1,25 @@
 const featuredContainer = document.querySelector('#featured-container');
 const pickContainer = document.querySelector('#pick-container');
+const badgeContainer = document.querySelector('#badge-container');
 
 let coffees = [];
+let ingredients = [
+  'Coffee',
+  'Espresso',
+  'Steamed Milk',
+  'Foam',
+  'Hot Water',
+  '1oz Espresso',
+  '2oz Espresso',
+  '1oz Steamed Milk',
+  'Foamed milk',
+  'Long pulled espresso',
+];
+
+badgeContainer.addEventListener('click', (event) => {
+  const clickedBtn = event.target.closest('.custom-badge');
+  const selectedIngredient = clickedBtn.textContent;
+});
 
 window.addEventListener('DOMContentLoaded', () => {
   featuredContainer.innerHTML = `
@@ -33,6 +51,13 @@ async function getCoffee() {
 
   coffees.forEach((item) => {
     addCardToContainer(item);
+  });
+
+  ingredients.forEach((item) => {
+    const buttonEl = document.createElement('button');
+    buttonEl.classList.add('custom-badge');
+    buttonEl.textContent = item;
+    badgeContainer.appendChild(buttonEl);
   });
 }
 
