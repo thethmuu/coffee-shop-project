@@ -12,18 +12,22 @@ form.addEventListener('submit', async (event) => {
     job: jobInput.value,
   };
 
-  const res = await fetch('https://reqres.in/api/users', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify(data),
-  });
+  try {
+    const res = await fetch('https://reres.in/api/users', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data),
+    });
 
-  if (res.ok) {
-    alert('successful');
-    submitBtn.textContent = 'Save';
-  } else {
-    alert('unsuccessful');
+    if (res.ok) {
+      alert('successful');
+      submitBtn.textContent = 'Save';
+    } else {
+      alert('unsuccessful');
+    }
+  } catch (error) {
+    throw new Error(error.message);
   }
 });

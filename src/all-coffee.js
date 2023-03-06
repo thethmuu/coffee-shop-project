@@ -74,7 +74,7 @@ function addCardToContainer(coffee) {
   const articleEl = document.createElement('article');
   articleEl.classList.add('featured-card');
   articleEl.innerHTML = `
-   <figure class="max-h-64 object-cover">
+   <figure class="h-52 object-cover">
     <img
       src=${coffee.image}
       alt=${coffee.title}
