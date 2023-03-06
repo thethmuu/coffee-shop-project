@@ -19,6 +19,11 @@ let ingredients = [
 badgeContainer.addEventListener('click', (event) => {
   const clickedBtn = event.target.closest('.custom-badge');
   const selectedIngredient = clickedBtn.textContent;
+  const filteredCoffees = coffees.filter((item) =>
+    item.ingredients.includes(selectedIngredient)
+  );
+
+  loadCoffeesToUI(filteredCoffees);
 });
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -47,17 +52,21 @@ async function getCoffee() {
   const data = await res.json();
   coffees = data;
 
-  featuredContainer.innerHTML = '';
-
-  coffees.forEach((item) => {
-    addCardToContainer(item);
-  });
+  loadCoffeesToUI(coffees);
 
   ingredients.forEach((item) => {
     const buttonEl = document.createElement('button');
     buttonEl.classList.add('custom-badge');
     buttonEl.textContent = item;
     badgeContainer.appendChild(buttonEl);
+  });
+}
+
+function loadCoffeesToUI(coffeesToLoad) {
+  featuredContainer.innerHTML = '';
+
+  coffeesToLoad.forEach((item) => {
+    addCardToContainer(item);
   });
 }
 
