@@ -13,7 +13,7 @@ form.addEventListener('submit', async (event) => {
   };
 
   try {
-    const res = await fetch('https://reres.in/api/users', {
+    const res = await fetch('https://reqes.in/api/users', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
