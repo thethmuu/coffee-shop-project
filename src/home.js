@@ -5,7 +5,7 @@ let coffees = [];
 
 window.addEventListener('DOMContentLoaded', () => {
   featuredContainer.innerHTML = `
-    <div class="border border-blue-300 shadow rounded-md p-4 max-w-sm w-full mx-auto">
+    <div class="shadow rounded-sm p-4 max-w-sm w-full mx-auto">
   <div class="animate-pulse flex space-x-4">
     <div class="rounded-full bg-slate-200 h-10 w-10"></div>
     <div class="flex-1 space-y-6 py-1">
@@ -40,7 +40,7 @@ function addCardToContainer(coffee) {
   const articleEl = document.createElement('article');
   articleEl.classList.add('featured-card');
   articleEl.innerHTML = `
-   <figure class="max-h-64 object-cover">
+   <figure class="h-64 object-cover">
     <img
       src=${coffee.image}
       alt='Shoes'
